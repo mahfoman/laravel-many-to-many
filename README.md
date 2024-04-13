@@ -22,9 +22,13 @@ Laravel 10.43.0 on php 8.1.0 is used for this demo project
 ## How to use
 
 - Clone or download the project
-- run [ composer install ]  
-- create a mysql database and update the name in .env file
-- run [ php artisan migrate ]
+- composer install
+- copying .env from .env.example [ cp .env.example .env ]
+- creating a mysql database and update the name in .env file
+- Setting APP_KEY value in .env by - php artisan key:generate
+- seeding data [ php artisan migrate ]
+- running the project [php artisan serve]
+- browsing to http://localhost:8000/doctors to see the output
 
 
 ## License
